@@ -1,0 +1,83 @@
+*, *::after, *::before {
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    animation: background-color 0.8s infinite;
+}
+@keyframes background-color {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: rgb(255, 0, 200);
+    }
+    20% {
+        background-color: aqua;
+    }
+    40% {
+        background-color: #EEE;
+    }
+    50% {
+        background-color: green;
+    }
+    60% {
+        background-color: yellow;
+    }
+    70% {
+        background-color: rgb(228, 130, 18);
+    }
+    80% {
+        background-color: rgb(19, 124, 209);
+    }
+    90% {
+        background-color: rgb(30, 207, 60);
+    }
+    100% {
+        background-color: rgb(43, 231, 175);
+    }
+}
+.color {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    animation: change-color 1s infinite;
+    opacity: 0.1;
+}
+@keyframes change-color {
+    0% {
+        color: black;
+    }
+    10% {
+        color: white;
+    }
+    20% {
+        color: aqua;
+    }
+    40% {
+        color: #EEE;
+    }
+    50% {
+        color: whitesmoke;
+    }
+    60% {
+        color: rgb(172, 172, 67);
+    }
+    70% {
+        color: #CCC;
+    }
+    80% {
+        color: whitesmoke;
+    }
+    90% {
+        color: rgb(116, 189, 207);
+    }
+    100% {
+        color: rgb(0, 0, 0)
+    }
+}
